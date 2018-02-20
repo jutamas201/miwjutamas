@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#a6dff4"
+    android:background="@mipmap/miw8"
     tools:context="com.miw.s5835512106.miwjutamas.MainActivity">
+
     <TextView
         android:id="@+id/t1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Temperature"
-        android:textColor="#3d0f17"
+        android:text="B.E. A.D."
+         android:textColor="#251a79"
         android:textSize="40sp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -28,7 +29,7 @@
         android:layout_marginLeft="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
-        android:background="#FDFEFE"
+        android:background="#f0fafa"
         android:inputType="numberDecimal"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,7 +49,7 @@
         android:layout_marginLeft="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
+        android:background="#f3f6f9"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,18 +62,18 @@
 
     <Button
         android:id="@+id/bt1"
-        android:layout_width="145dp"
-        android:layout_height="46dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginRight="65dp"
-        android:background="#e8f5e767"
+        android:layout_marginTop="5dp"
+        android:background="#e8f0f47c"
         android:onClick="changeF"
-        android:text="calculate Fahrenheit"
+        android:text="B.E. ->  A.D."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/t1"
-        app:layout_constraintVertical_bias="0.174"
-        android:layout_marginTop="5dp"/>
+        app:layout_constraintVertical_bias="0.174" />
 
     <Button
         android:id="@+id/bt2"
@@ -81,9 +82,9 @@
         android:layout_marginBottom="8dp"
         android:layout_marginRight="60dp"
         android:layout_marginTop="77dp"
-        android:background="#e8f5e767"
+        android:background="#e8f5f067"
         android:onClick="changeC"
-        android:text="calculate Celsius"
+        android:text="A.D -> B.E."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,66 +94,72 @@
 
     <TextView
         android:id="@+id/t4"
-        android:layout_width="29dp"
-        android:layout_height="55dp"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="4dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:text="ํCํ"
-        android:textColor="#28051d"
+        android:layout_marginTop="24dp"
+        android:text="ํป้อนพ.ศ."
+        android:textColor="#efeaee"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.667"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toRightOf="@+id/edit1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t1" />
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        app:layout_constraintVertical_bias="0.002" />
 
     <TextView
         android:id="@+id/t5"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
+        android:layout_width="136dp"
+        android:layout_height="39dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="104dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="F"
-        android:textColor="#24042d"
+        android:text="ป้อน ค.ศ."
+        android:textColor="#f8f6f9"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/t3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.436" />
 
     <ImageView
 
         android:id="@+id/t6"
-        android:layout_width="159dp"
-        android:layout_height="190dp"
+        android:layout_width="227dp"
+        android:layout_height="307dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:src="@mipmap/miw1"
+        android:src="@mipmap/miw6"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.318"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/t3"
         android:layout_width="287dp"
         android:layout_height="43dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="THANK  YOU"
-        android:textColor="#dee72d1c"
+        android:textColor="#de2e022a"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/t1"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintVertical_bias="0.674" />
 
 
 </android.support.constraint.ConstraintLayout>

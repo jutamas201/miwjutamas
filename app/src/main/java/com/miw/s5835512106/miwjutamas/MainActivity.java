@@ -30,26 +30,26 @@ public class MainActivity extends AppCompatActivity {
     public void changeF(View view) {
 
         if(edit1.length()==0){
-            t3.setText("please input integer celcuis222.");}
+            t3.setText("please input integer ");}
         else{
             cal = Double.parseDouble(edit1.getText().toString());
-            ccal = (cal*(9.0/5.0))+32;
+            ccal = (cal-543);
             scal = Double.toString(ccal);
             edit2.setText(scal);
-            t3.setText("Calculate Fahrenheit Complete");
+            t3.setText("Calculate B.E. ->  A.D.");
         }
     }
 
     public void changeC(View view) {
         if (edit2.length()==0){
-            t3.setText("please input integer Fahrenheit.");}
+            t3.setText("please input integer .");}
 
         else{
             cal1 = Double.parseDouble(edit2.getText().toString());
-            ccal1 = (cal1-32)*(5.0/9.0);
+            ccal1 = (cal1+543);
             scal1 = Double.toString(ccal1);
             edit1.setText(scal1);
-            t3.setText("Calculate celcuis Complete");
+            t3.setText("Calculate A.D -> B.E");
         }
     }
 }
